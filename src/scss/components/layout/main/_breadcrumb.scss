@@ -1,0 +1,26 @@
+.breadcrumb {
+    margin-top: -5px;
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        height: 100%;
+        width: $maxwidth;
+        color: $font-grey;
+        padding: 0 2rem;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        height: 100%;
+        padding: 1.5rem 1rem;
+        &:first-child, &:last-child {
+            border-left: solid $grey 1px;
+            border-right: solid $grey 1px;
+        }
+        &--modify {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}

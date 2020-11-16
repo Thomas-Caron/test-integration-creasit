@@ -1,0 +1,14 @@
+.btn-reverse {
+    border: solid 1px transparent;
+    background: $white;
+    border-radius: .2rem;
+    padding: 1rem 2rem;
+    color: $primary;
+    text-transform: uppercase;
+    transition: .3s ease;
+    &:hover {
+        border: solid 1px $white;
+        background: none;
+        color: $white;
+    }
+}

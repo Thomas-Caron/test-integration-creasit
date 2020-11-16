@@ -1,0 +1,15 @@
+.title {
+    background: $primary;
+    color: $white;
+    &__container {
+        max-width: $maxwidth;
+        margin: 0 auto;
+        height: 100%;
+        padding: 2rem 2rem;
+    }
+    &__title {
+        font-size: 4rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+}

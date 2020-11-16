@@ -1,0 +1,14 @@
+.btn {
+    border: solid 1px transparent;
+    background: $primary;
+    border-radius: .2rem;
+    padding: 1rem 2rem;
+    color: $white;
+    text-transform: uppercase;
+    transition: .3s ease;
+    &:hover {
+        border: solid 1px $primary;
+        background: none;
+        color: $primary;
+    }
+}

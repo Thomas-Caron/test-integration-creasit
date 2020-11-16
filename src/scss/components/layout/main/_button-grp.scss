@@ -1,0 +1,10 @@
+.button-grp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    & button {
+        margin: 0 1rem;
+        margin-bottom: 1rem;
+    }
+}

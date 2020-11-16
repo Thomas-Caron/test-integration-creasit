@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "sass": "^1.29.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "swiper": "^6.3.5"
+  }
+}

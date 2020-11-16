@@ -1,0 +1,50 @@
+.filter {
+    background: $grey;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: $maxwidth;
+        height: 100%;
+        margin: 0 auto;
+        padding: 2rem 2rem 1rem 2rem;
+    }
+    &__item {
+        background: $white;
+        border: solid 1px transparent;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        margin: 0 .5rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        color: $font-grey;
+        transition: .3s ease;
+        cursor: pointer;
+        &:not(:first-child):not(:last-child):hover {
+                color: $primary;
+                border: solid 1px $primary;
+        }
+        &--active {
+            background: $primary;
+            color: $white;
+        }
+        &--add {
+            background: none;
+            border: solid $font-grey 1px;
+            position: relative;
+            padding-right: 3rem;
+            &::before {
+                @include fa-icon;
+                content: $fa-var-angle-down;
+                position: absolute;
+                right: 8%;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            &:hover {
+                background: $dark-grey;
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.link {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    & button {
+        border: none;
+        background: none;
+        padding: 1.5rem 2rem;
+        color: $font-grey;
+        text-transform: uppercase;
+        transition: .3s ease;
+        &:hover {
+            background: $grey;
+        }
+        &:first-of-type {
+            border-right: solid 1px $grey;
+        }
+        &:last-of-type {
+            border-left: solid 1px $grey;
+        }
+    }
+    &__download {
+        position: relative;
+        padding-left: 3rem !important;
+        &::before {
+            @include fa-icon;
+            content: $fa-var-file-pdf-o;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    &__print {
+        position: relative;
+        padding-left: 3rem !important;
+        &::before {
+            @include fa-icon;
+            content: $fa-var-print;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+    &__share {
+        position: relative;
+        padding-left: 3rem !important;
+        &::before {
+            @include fa-icon;
+            content: $fa-var-share-alt;
+            position: absolute;
+            left: 15%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1rem;
+            font-weight: bold;
+        }
+    }
+}

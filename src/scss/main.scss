@@ -1,0 +1,26 @@
+//! Abstracts
+@import 'abstracts/colors';
+@import 'abstracts/fonts';
+@import 'abstracts/breakpoints';
+@import 'abstracts/variables';
+
+//! Dependencies
+$fa-font-path: '../../node_modules/font-awesome/fonts';
+@import '../../node_modules/font-awesome/scss/font-awesome';
+
+//! Reset
+@import 'reset/reset';
+
+//! Layout
+@import 'components/layout/header';
+@import 'components/layout/main';
+@import 'components/layout/footer';
+
+//! Partials
+@import 'components/partials/button';
+@import 'components/partials/button-reverse';
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
